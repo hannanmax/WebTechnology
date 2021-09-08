@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML Notes</title>
+		<link rel="stylesheet" href="base.css">
+		<link rel="icon" href="https://www.hannanmax.com/android-icon-192x192.png">
+		<script src="menu.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container" onclick="rotateIcon(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<div id="wrapper">
+			<ul class="tab" id="ID" onmouseover="this.style.overflow='auto'" onmouseout="this.style.overflow='hidden'" >
+				<a onclick="openIntroductionPage()"><img src="images/dp.png" style="width:100px;height:100px;"></a>
+				<center>
+					<p><a href="https://www.hannanmax.com/WebTechnology/index.html">Click here to go to Resume</a></p>
+				</center>
+				</br></br>
+				<li onclick="openPage(event, 'musicplayer')" class="first"><a href="javascript:void(0)" class="tablinks">Music Player</a></li>
+
+			</ul>
+			<div id="default" class="default-page">
+				<h3>Welcome to ClassWork</h3>
+				<h3 id="hidden-heading">HTML and CSS</h3>
+				<img src="images/html.jpg">
+				<center>
+					<a id="jump-to-intro" onclick="openPage(event, 'introduction')">Click here to see!</a>
+				</center>
+			</div>
+			<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
+
+      <div id="musicplayer" class="tabcontent">
+				<h3 class="heading">Music Player</h3>
+				<div class="content">
+					<!-- Start writing from here -->
+					<div class="explanationText">
+            The HTML &lt;audio&gt; Element</br>
+            To play an audio file in HTML, use the &lt;audio&gt; element:
+					</div>
+					<xmp class="code">
+<audio controls>
+  <source src="audios/f1.mp3" type="audio/mpeg">
+   Sorry, your browser doesn't support audio- play.
+</audio>
+					</xmp>
+          <div class="explanationHeading">HTML Audio - How It Works</div>
+					<p class="explanationText">
+            The controls attribute adds audio controls, like play, pause, and volume.</br>
+            The &lt;source&gt; element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</br>
+            The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the <audio> element.</br>
+					</p>
+					
+	<img src="images/arrow_left.svg" id = "previous_section_arrow" class = "navigationArrows" title="Previous section" onclick="previousPage()">
+	<img src="images/arrow_right.svg" id = "next_section_arrow" class = "navigationArrows" title="Next Section" onclick="nextPage()">
+	</body>
+</html>
