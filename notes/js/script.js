@@ -10,7 +10,7 @@ function setupEditor() {
   editor.setTheme("ace/theme/monokai");
   editor.getSession().setMode("ace/mode/html");
   var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", "..//notes/textfiles/file.txt", true);
+  txtFile.open("GET", "../notes/textfiles/file.txt", true);
   txtFile.onreadystatechange = function()
   {
       if (txtFile.readyState === 4)
