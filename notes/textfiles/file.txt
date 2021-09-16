@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>p tag</title>
+	</head>
+	<body>
+		<p>This is line 1.</p>
+		<p>This is line 2.</p>
+		<p>This is line 3.</p>
+		<br>
+		<!-- trying to format the text without using p-tag -->
+		This is line 1.
+		This is line 2.
+		This is line 3.
+	</body>
+</html>
